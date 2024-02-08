@@ -7,12 +7,13 @@ export default {
   ],
   theme: {
     colors: {
-      'bc-black': '#000000',
+      'bc-black': '#18191d',
       'bc-yellow': '#ffd719',
       'bc-white': '#ffffff',
       'bc-gray': '#262121',
       'bc-gray-hover': 'rgb(59,51,51)',
       'bc-gray-active': 'rgb(59,51,51)',
+      'bc-black-opacity': 'rgba(24, 25, 29, 0.8)',
     },
     fontFamily: {
       sans: ['Poppins', 'sans-serif'],
@@ -29,7 +30,7 @@ export default {
   },
   plugins: [
       require("@tailwindcss/forms"),
-      require("preline/plugin")
+      require("preline/plugin"),
   ],
 }
 

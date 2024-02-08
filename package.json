@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@preline/accordion": "^2.0.2",
     "preline": "^2.0.3",
     "vue": "^3.4.15",
     "vue-router": "^4.2.5"

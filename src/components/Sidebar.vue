@@ -6,14 +6,13 @@
   <div id="docs-sidebar" class="hs-overlay hs-overlay-open:translate-x-0 -translate-x-full transition-all duration-300 transform hidden fixed top-0 start-0 bottom-0 z-[60] w-64 bg-bc-gray border-r-2 border-bc-yellow pt-7 pb-10 overflow-y-auto lg:translate-x-0 lg:end-auto lg:bottom-0 [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-bc-gray [&::-webkit-scrollbar-thumb]:bg-bc-gray sm:hidden">
     <div class="px-6">
       <RouterLink id="logo" to="/" class="sidebar-button flex-none text-xl font-semibold flex items-center justify-center">
-        <img class="h-16" src="../assets/img/logo.png" alt="Logo" />
+        <img class="h-16" src="../assets/img/logo.svg" alt="Logo" />
       </RouterLink>
     </div>
     <nav class="hs-accordion-group p-6 w-full flex flex-col flex-wrap" data-hs-accordion-always-open>
       <ul class="space-y-1.5">
         <li>
           <a class="flex items-center gap-x-3.5 py-2 px-2.5 bg-bc-yellow text-sm text-bc-black rounded-lg hover:bg-bc-gray-hover" href="#">
-            <!-- + icon svg -->
             <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
             Déposer une annonce
           </a>
@@ -39,12 +38,42 @@
             Nos guides
           </RouterLink>
         </li>
-        <li>
-          <RouterLink to="/a-propos" class="sidebar-button flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-bc-white rounded-lg hover:bg-bc-gray-hover">
-            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z"/></svg>
+        <li class="hs-accordion" id="projects-accordion">
+          <button type="button" class="hs-accordion-toggle hs-accordion-active:bg-bc-gray-hover hs-accordion-active:hover:bg-transparent w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-bc-white rounded-lg hover:bg-bc-gray-hover">
+            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" /></svg>
             À propos
-          </RouterLink>
+
+            <svg class="hs-accordion-active:block ms-auto hidden w-4 h-4 text-bc-white group-hover:text-bc-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" /></svg>
+
+            <svg class="hs-accordion-active:hidden ms-auto block w-4 h-4 text-bc-white group-hover:text-bc-white"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
+          </button>
+
+          <div id="projects-accordion" class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 hidden">
+            <ul class="pt-2 ps-2">
+              <li>
+                <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-bc-white rounded-lg hover:bg-bc-gray-hover" href="#">
+                  Qui sommes-nous ?
+                </a>
+              </li>
+              <li>
+                <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-bc-white rounded-lg hover:bg-bc-gray-hover" href="#">
+                  Comment ça marche ?
+                </a>
+              </li>
+              <li>
+                <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-bc-white rounded-lg hover:bg-bc-gray-hover" href="#">
+                  Diagnostic
+                </a>
+              </li>
+              <li>
+                <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-bc-white rounded-lg hover:bg-bc-gray-hover" href="#">
+                  F.A.Q
+                </a>
+              </li>
+            </ul>
+          </div>
         </li>
+
         <li class="flex items-center justify-center py-2">
           <div class="w-10 h-0.5 bg-bc-yellow"></div>
         </li>

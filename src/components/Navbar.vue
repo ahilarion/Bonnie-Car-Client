@@ -3,10 +3,10 @@ import Sidebar from "@/components/Sidebar.vue";
 </script>
 
 <template>
-  <header class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-bc-gray text-sm py-4 border-b-2 border-b-bc-yellow">
+  <header class="fixed top-0 flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full text-sm py-4 transition-all">
     <nav class="max-w-[85rem] w-full mx-auto px-4 flex items-center justify-between" aria-label="Global">
       <a class="flex-none text-xl font-semibold" href="#">
-        <img class="h-8" src="../assets/img/logo.png" alt="Logo" />
+        <img class="h-8" src="../assets/img/logo.svg" alt="Logo" />
       </a>
       <div class="hidden sm:flex flex-row items-center gap-5 mt-5 sm:justify-end sm:mt-0 sm:ps-5">
         <a class="font-medium capitalize text-bc-white " href="#" aria-current="page">nos véhicules</a>
@@ -25,3 +25,22 @@ import Sidebar from "@/components/Sidebar.vue";
 
   <Sidebar />
 </template>
+
+<script>
+   export default {
+     mounted() {
+       let header = document.querySelector("header");
+       document.addEventListener("scroll", () => {
+         if (window.scrollY > 0) {
+            header.classList.add("bg-bc-gray");
+            header.classList.add("border-b-2");
+            header.classList.add("border-bc-yellow");
+         } else {
+            header.classList.remove("bg-bc-gray");
+            header.classList.remove("border-b-2");
+            header.classList.remove("border-bc-yellow");
+         }
+       });
+     }
+   };
+</script>
