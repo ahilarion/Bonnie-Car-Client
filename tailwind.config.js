@@ -5,12 +5,14 @@ export default {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
     "node_modules/preline/dist/*.js"
   ],
-  darkMode: "class", // or 'media' or 'class'
   theme: {
     colors: {
       'bc-black': '#000000',
       'bc-yellow': '#ffd719',
       'bc-white': '#ffffff',
+      'bc-gray': '#262121',
+      'bc-gray-hover': 'rgb(59,51,51)',
+      'bc-gray-active': 'rgb(59,51,51)',
     },
     fontFamily: {
       sans: ['Poppins', 'sans-serif'],
