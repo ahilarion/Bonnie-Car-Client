@@ -1,10 +1,9 @@
 <script setup>
-// at each click on a router link, get the actual route name and display it in the console
 
 </script>
 
 <template>
-  <div id="docs-sidebar" class="hs-overlay hs-overlay-open:translate-x-0 -translate-x-full transition-all duration-300 transform hidden fixed top-0 start-0 bottom-0 z-[60] w-64 bg-bc-gray border-r-2 border-bc-yellow pt-7 pb-10 overflow-y-auto lg:translate-x-0 lg:end-auto lg:bottom-0 [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 sm:hidden">
+  <div id="docs-sidebar" class="hs-overlay hs-overlay-open:translate-x-0 -translate-x-full transition-all duration-300 transform hidden fixed top-0 start-0 bottom-0 z-[60] w-64 bg-bc-gray border-r-2 border-bc-yellow pt-7 pb-10 overflow-y-auto lg:translate-x-0 lg:end-auto lg:bottom-0 [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-bc-gray [&::-webkit-scrollbar-thumb]:bg-bc-gray sm:hidden">
     <div class="px-6">
       <RouterLink id="logo" to="/" class="sidebar-button flex-none text-xl font-semibold flex items-center justify-center">
         <img class="h-16" src="../assets/img/logo.png" alt="Logo" />
