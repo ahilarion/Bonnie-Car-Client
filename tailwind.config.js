@@ -7,10 +7,12 @@ export default {
   ],
   theme: {
     colors: {
-      'bc-black': '#18191d',
-      'bc-yellow': '#ffd719',
-      'bc-white': '#ffffff',
-      'bc-gray': '#262121',
+      'bc-black': '#19181D',
+      'bc-yellow': '#FFD719',
+      'bc-white': '#EFEFEE',
+      'bc-gray-dark': '29282D',
+      'bc-gray': '#37363B',
+      'bc-gray-light': '#7F7F7F',
       'bc-gray-hover': 'rgb(59,51,51)',
       'bc-gray-active': 'rgb(59,51,51)',
       'bc-black-opacity': 'rgba(24, 25, 29, 0.8)',
