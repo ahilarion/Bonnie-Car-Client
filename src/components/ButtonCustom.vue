@@ -14,6 +14,7 @@ const props = defineProps({
   },
 });
 
+
 onMounted(() => {
   if (props.type === "black") {
     colorText.value = "text-bc-yellow";
@@ -40,7 +41,7 @@ onMounted(() => {
 
 <template>
   <button
-    :class="`${colorText} ${colorBg} ${colorBorder} ${rounded} mt-4 font-light text-[16px] py-2 px-4 border-solid border`"
+    :class="`${colorText} ${colorBg} ${colorBorder} ${rounded} px-2.5 py-5 font-light text-[16px] border-solid border`"
   >
     <slot></slot>
   </button>
