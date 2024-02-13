@@ -1,14 +1,14 @@
 <script setup>
-
-import Sponsors from "@/components/Sponsors.vue";
-import Post from "@/components/Post.vue";
-import LoginForm from "@/components/LoginForm.vue";
-import Caracteristic from "@/components/Caracteristic.vue";
-import Footer from "@/components/Footer.vue";
-import GlobalInfos from "@/components/GlobalInfos.vue";
-import Review from "@/components/Review.vue";
-import Annonce from "@/components/Annonce.vue";
-import Banner from "@/components/Banner.vue";
+  import Sponsors from "@/components/Sponsors.vue";
+  import Post from "@/components/Post.vue";
+  import LoginForm from "@/components/LoginForm.vue";
+  import Caracteristic from "@/components/Caracteristic.vue";
+  import Footer from "@/components/Footer.vue";
+  import GlobalInfos from "@/components/GlobalInfos.vue";
+  import Review from "@/components/Review.vue";
+  import Annonce from "@/components/Annonce.vue";
+  import Banner from "@/components/Banner.vue";
+  import GuideCard from "@/components/GuideCard.vue";
 </script>
 
 <template>
@@ -21,6 +21,7 @@ import Banner from "@/components/Banner.vue";
     <!-- <Review /> -->
     <!-- <Annonce /> -->
     <!-- <Banner /> -->
+    <GuideCard />
 
     <!-- <InputCustom type="email" placeholder="Votre adresse email" />
       <InputCustom
