@@ -1,16 +1,5 @@
-<script setup>
-import { defineProps } from "vue";
-
-const props = defineProps({
-  color: {
-    type: String,
-    default: "text-bc-white",
-  },
-});
-</script>
-
 <template>
-  <h2 class="md:text-4xl font-black text-left" :class="props.color">
+  <h2 class="text-[20px] font-black text-left text-bc-white">
     <slot></slot>
   </h2>
 </template>

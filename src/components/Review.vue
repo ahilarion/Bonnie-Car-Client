@@ -1,3 +1,7 @@
+<script setup>
+    import ButtonCustom from "@/components/ButtonCustom.vue";
+</script>
+
 <template>
     <div class="w-full flex flex-col  justify-between p-10">
 
@@ -190,7 +194,9 @@
         </div>
 
         <div class="text-center">
-            <a class="bg-bc-yellow p-5 border-text-bc-yellow border-[1px] rounded-[40px]" href="qsd">Voir plus</a>
+            <ButtonCustom>
+                Voir plus
+            </ButtonCustom>
         </div>
         
     </div>
