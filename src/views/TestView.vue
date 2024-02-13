@@ -16,5 +16,5 @@ import Review from "@/components/Review.vue";
     <!-- <Caracteristic /> -->
     <!-- <Footer /> -->
     <!-- <GlobalInfos /> -->
-    <Review />
+    <!-- <Review /> -->
 </template>
