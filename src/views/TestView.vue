@@ -1,5 +1,4 @@
 <script setup>
-
 import Post from "@/components/Post.vue";
 import Sponsors from "@/components/Sponsors.vue";
 import LoginForm from "@/components/LoginForm.vue";
@@ -10,11 +9,11 @@ import Review from "@/components/Review.vue";
 </script>
 
 <template>
-    <!-- <Sponsors /> -->
-    <!-- <Post /> -->
-    <!-- <LoginForm /> -->
-    <!-- <Caracteristic /> -->
-    <!-- <Footer /> -->
-    <!-- <GlobalInfos /> -->
-    <!-- <Review /> -->
+  <!-- <Sponsors /> -->
+  <Post />
+  <!-- <LoginForm /> -->
+  <!-- <Caracteristic /> -->
+  <!-- <Footer /> -->
+  <!-- <GlobalInfos /> -->
+  <!-- <Review /> -->
 </template>
