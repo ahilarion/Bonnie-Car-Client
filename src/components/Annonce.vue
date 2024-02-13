@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from "vue";
 import ButtonCustom from "@/components/ButtonCustom.vue";
+import InputCustom from "@/components/InputCustom.vue";
 
 const currentImage = ref(0);
 
@@ -102,8 +103,19 @@ const prevImage = () => {
       <p class="mt-1 text-bc-white" v-if="posts[currentImage]">
         {{ posts[currentImage].content }}
       </p>
-      <!-- <button class="mt-4 bg-bc-yellow text-bc-black font-semibold py-2 px-4 rounded-lg hover:bg-bc-yellow-hover">Read More</button> -->
-      <ButtonCustom>Read More</ButtonCustom>
+      <!-- <InputCustom type="email" placeholder="Votre adresse email" />
+      <InputCustom
+        type="password"
+        placeholder="FéS PeTeR lE paSsword"
+        typeInput="iconRight"
+      />
+      <InputCustom
+        type="password"
+        placeholder="Drop ta loc"
+        typeInput="iconLeft"
+      />
+      <InputCustom placeholder="Balance ta bio honey" typeInput="textarea" />
+      <InputCustom placeholder="Choisi ton sexe bébé" typeInput="select" /> -->
     </div>
   </div>
 </template>
