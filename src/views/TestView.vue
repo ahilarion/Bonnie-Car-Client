@@ -10,7 +10,7 @@ import Review from "@/components/Review.vue";
 
 <template>
   <!-- <Sponsors /> -->
-  <Post />
+  <Post class="mt-20" />
   <!-- <LoginForm /> -->
   <!-- <Caracteristic /> -->
   <!-- <Footer /> -->
