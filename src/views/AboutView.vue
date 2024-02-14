@@ -210,56 +210,17 @@ import Accordion from "@/components/Accordion.vue";
       </div>
     </div>
   </div>
-
-  <div class="px-5 pt-6 pb-20 bg-bc-black">
-    <Accordion>Le diagnostic Bonnie&Car</Accordion>
-    <TitleCustom class="text-bc-yellow">Foire aux questions</TitleCustom>
-    <TitleCustom class="text-bc-yellow text-center">Vendeur</TitleCustom>
-    <div class="flex flex-col gap-2">
-      <Accordion
-        >Qu’apporte le service B&C pour vendre mon véhicule ?</Accordion
-      >
-      <Accordion>Comment Bonnie&Car sécurise votre transaction ?</Accordion>
-      <Accordion
-        >Est ce que je peux utiliser mon véhicule le temps de la vente
-        ?</Accordion
-      >
-      <Accordion>Comment se déroule l'essai du véhicule ?</Accordion>
-      <Accordion>Comment est fixé le prix de vente de mon véhicule ?</Accordion>
-      <Accordion
-        >Comment arrivons-nous à vous proposer des prix de vente au minimum 10%
-        plus élevés qu’un concessionnaire ou qu’un acteur de reprise cash
-        ?</Accordion
-      >
-      <Accordion
-        >Combien me coûte de vendre mon véhicule avec Bonnie&Car ?</Accordion
-      >
-      <TitleCustom class="text-bc-yellow text-center">Acheteur</TitleCustom>
-      <Accordion
-        >Qu'apporte le service B&C pour acheter mon véhicule ?</Accordion
-      >
-      <Accordion
-        >Est ce que je dois payer des frais supplémentaires pour bénéficier du
-        service Bonnie&Car ?</Accordion
-      >
-      <Accordion>Comment se passe le paiement sécurisé ?</Accordion>
-      <Accordion
-        >Est il possible d'avoir une garantie panne mécanique ?</Accordion
-      >
-      <Accordion
-        >Que se passe-t-il si il y a un soucis sur le véhicule quelques jours
-        après l'achat ?</Accordion
-      >
-      <Accordion
-        >Y a t-il un service pour faire la carte grise du véhicule acheté
-        ?</Accordion
-      >
-      <Accordion
-        >Un financement est il possible pour l'achat de mon véhicule
-        ?</Accordion
-      >
-    </div>
-  </div>
-
+    <Accordion>
+      <h1 slot="title">Qui sommes-nous ?</h1>
+      <p slot="content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
+        Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at
+        nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec
+        tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget
+        nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+        per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim
+        lacinia nunc.
+      </p>
+    </Accordion>
   <Footer />
 </template>
