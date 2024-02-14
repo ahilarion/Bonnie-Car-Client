@@ -14,6 +14,11 @@ const router = createRouter({
             component: () => import('../views/PostsView.vue')
         },
         {
+            path: '/ajouter-annonce',
+            name: 'AddPost',
+            component: () => import('../views/AddPostView.vue')
+        },
+        {
             path: '/nos-guides',
             name: 'Articles',
             component: () => import('../views/ArticlesView.vue')
