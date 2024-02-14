@@ -8,31 +8,24 @@
     <div class="absolute bg-bc-gray w-full z-[55] h-full justify-center flex">
         <div class="flex flex-col px-8 justify-center h-full w-full lg:w-[33%] align-middle">
             <TitleCustom class="text-center text-bc-yellow">
-                Bienvenue
+                Mot de passe oublié
             </TitleCustom>
+
+            <p class="text-center text-bc-white">Vous allez recevoir un e-mail pour modifier votre mot de passe.</p>
             
             <InputCustom
                 type="email"
                 placeholder="Adresse mail"
+                class="mt-5"
             />
-
-            <InputCustom
-                type="password"
-                placeholder="Mot de passe"
-                typeInput="iconRight"
-            />
-
-            <div class="bg-bc-yellow relative">
-                <a href="#" class="absolute right-0 text-end text-bc-white underline">Mot de passe oublié</a>
-            </div>
             
-            <div class="text-center mt-10">
+            <div class="text-center mt-5">
                 <ButtonCustom>
-                    Se connecter
+                    Réinitialiser le mot de passe
                 </ButtonCustom>
             </div>
         </div>
 
-        <p class="absolute bottom-5 left-2/4 translate-x-[-50%] text-[#7f7f7f]">Vous n'avez pas de compte ? <a href="#" class="underline text-bc-yellow">Inscription</a></p>
+        <p class="absolute bottom-5 left-2/4 translate-x-[-50%] text-[#7f7f7f]">Vous avez déja un compte ? <a href="#" class="underline text-bc-yellow">Connexion</a></p>
     </div>
 </template>
