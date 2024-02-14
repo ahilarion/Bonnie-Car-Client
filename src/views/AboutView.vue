@@ -37,13 +37,11 @@ import GlobalInfos from "@/components/GlobalInfos.vue";
     <div class="absolute top-0 z-10 bg-bc-black w-full h-full opacity-85"></div>
   </div>
 
-  <div class="bg-bc-black px-14">
-    <TitleCustom class="text-bc-yellow">Comment ça marche ?</TitleCustom>
-  </div>
-
-  <div class="py-4 px-14 bg-bc-gray-dark">
-    <iframe
-      class="w-full h-52"
+  <div class="w-full bg-transparent flex flex-col items-center bg-bc-gray-dark justify-center transition-all mt-16">
+    <div class="flex flex-col justify-between w-[73vw] min-w-[300px]">
+      <TitleCustom class="text-bc-yellow w-full text-left">Comment ça marche ?</TitleCustom>
+      <iframe
+      class="w-full h-52 md:h-96"
       src="https://www.youtube.com/embed/zkNW5iN3fOg?si=7EJaKyF9D8zAHpvI"
       title="YouTube video player"
       frameborder="0"
@@ -51,7 +49,7 @@ import GlobalInfos from "@/components/GlobalInfos.vue";
       allowfullscreen
     ></iframe>
 
-    <div class="flex flex-col pt-12 gap-20">
+    <div class="flex flex-col md:flex-row md:flex-wrap gap-10 md:gap-40 items-center justify-start md:justify-center p-4 md:p-5 m-4">
       <GlobalInfos>
         <template #svg>
           <svg
@@ -214,18 +212,103 @@ import GlobalInfos from "@/components/GlobalInfos.vue";
         </template>
       </GlobalInfos>
     </div>
+    </div>
   </div>
-  <Accordion>
-    <template #title> Qui sommes-nous ? </template>
-    <template #content>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
-      Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at
-      nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec
-      tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget
-      nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-      per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim
-      lacinia nunc.
-    </template>
-  </Accordion>
+  <div class="w-full bg-transparent flex flex-col items-center justify-center transition-all mt-16">
+    <div class="flex flex-col justify-between w-[73vw] min-w-[300px]">
+      <div class="flex flex-col justify-between w-[73vw] min-w-[300px]">
+        <Accordion>
+          <template #title>
+            Estimation Précise et Concurrentielle
+          </template>
+          <template #content>
+            Une équipe dédiée aux études de marché réalise une estimation précise du prix de votre moto en fonction des caractéristiques du marché, offrant un prix de déclenchement de la vente basé sur l'offre et la demande.
+          </template>
+        </Accordion>
+
+        <Accordion>
+          <template #title>
+            Choix du Prix d'Accompagnement
+          </template>
+          <template #content>
+            Vous avez la liberté de choisir le prix d'accompagnement qui vous convient, offrant une flexibilité dans le processus de vente.
+          </template>
+        </Accordion>
+
+        <Accordion>
+          <template #title>
+            Collecte de Documents Facile
+          </template>
+          <template #content>
+            Transmission simple de tous les documents nécessaires à la publication de votre annonce, tels que photos, carte grise, papiers, factures, assurant une démarche administrative fluide.
+          </template>
+        </Accordion>
+
+        <Accordion>
+          <template #title>
+            Commercialisation sur Sites d'Annonces de Moto
+          </template>
+          <template #content>
+            La moto est commercialisée sur 10 sites d'annonces de moto, y compris des plateformes renommées comme Le Bon Coin, Leparking-moto, ParuVendu, Automoto.fr, Argus.fr, augmentant la visibilité et les chances de vente.
+          </template>
+        </Accordion>
+
+        <Accordion>
+          <template #title>
+            Usage Maintenu Pendant la Période de Publication
+          </template>
+          <template #content>
+            Vous conservez la moto et pouvez continuer à l'utiliser pendant que Bonnie&Car recherche activement un acheteur, avec une période de publication de quelques semaines.
+          </template>
+        </Accordion>
+
+        <Accordion>
+          <template #title>
+            Vente Conclue en 2 à 6 Semaines
+          </template>
+          <template #content>
+            Dès qu'un acquéreur est trouvé, la vente est conclue en 2 à 6 semaines, avec un rendez-vous entre l'acheteur, le contrôleur Bonnie&Car, assurant un processus sécurisé et fluide.
+          </template>
+        </Accordion>
+
+        <Accordion>
+          <template #title>
+            Assistance au Contrôle Technique et Documents Fournis
+          </template>
+          <template #content>
+            L'acheteur bénéficie d'une assistance au contrôle technique, avec la fourniture de documents tels que le certificat de non-gage, l'historique, et le certificat de cession pré-complété.
+          </template>
+        </Accordion>
+
+        <Accordion>
+          <template #title>
+            Suivi Post-Vente et Assistance Administrative
+          </template>
+          <template #content>
+            Bonnie&Car offre un suivi après l'acte de vente, s'assurant que tout se déroule bien. Les démarches administratives obligatoires pour l'acheteur via la plateforme ANTS sont supervisées sur demande.
+          </template>
+        </Accordion>
+
+        <Accordion>
+          <template #title>
+            Statistiques de Vente Convaincantes
+          </template>
+          <template #content>
+            Des statistiques de vente impressionnantes, avec une moyenne de 23 jours pour revendre une moto, 54% des ventes effectuées en moins de 3 semaines, et moins de 3 contacts qualifiés nécessaires en moyenne.
+          </template>
+        </Accordion>
+
+        <Accordion>
+          <template #title>
+            Libération du Processus de Vente avec Expertise Professionnelle à Coût Abordable
+          </template>
+          <template #content>
+            Grâce à Bonnie&Car, vous êtes libéré(e) du processus de vente tout en bénéficiant du savoir-faire d'un professionnel du secteur à moindre coût. Consultez les avis clients pour en savoir plus sur l'expérience des utilisateurs.
+          </template>
+        </Accordion>
+      </div>
+
+    </div>
+  </div>
   <Footer />
 </template>
