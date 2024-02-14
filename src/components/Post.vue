@@ -69,7 +69,7 @@ const prevImage = () => {
       >
         <button
           @click="prevImage"
-          class="border-bc-yellow border-[1px] absolute z-10 top-1/2 left-0 ml-8 transform -translate-y-1/2 p-2 bg-bc-black-opacity rounded-full text-bc-white"
+          class="border-bc-yellow border-[1px] absolute z-10 top-1/2 left-0 ml-3 transform -translate-y-1/2 p-2 bg-bc-black-opacity rounded-full text-bc-white"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +88,7 @@ const prevImage = () => {
         </button>
         <button
           @click="nextImage"
-          class="border-bc-yellow border-[1px] absolute z-10 top-1/2 right-0 mr-8 transform -translate-y-1/2 p-2 bg-bc-black-opacity rounded-full text-bc-white"
+          class="border-bc-yellow border-[1px] absolute z-10 top-1/2 right-0 mr-3 transform -translate-y-1/2 p-2 bg-bc-black-opacity rounded-full text-bc-white"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
