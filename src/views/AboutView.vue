@@ -211,8 +211,10 @@ import Accordion from "@/components/Accordion.vue";
     </div>
   </div>
     <Accordion>
-      <h1 slot="title">Qui sommes-nous ?</h1>
-      <p slot="content">
+      <template #title>
+        Qui sommes-nous ?
+      </template>
+      <template #content>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
         Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at
         nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec
@@ -220,7 +222,7 @@ import Accordion from "@/components/Accordion.vue";
         nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
         per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim
         lacinia nunc.
-      </p>
+      </template>
     </Accordion>
   <Footer />
 </template>

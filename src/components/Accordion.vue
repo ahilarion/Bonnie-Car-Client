@@ -10,8 +10,7 @@
             :aria-expanded="expanded.toString()"
             aria-controls="faqs-text-01"
         >
-          <!-- Slot title goes here -->
-          <span>What is the best thing about Switzerland?</span>
+          <slot name="title"></slot>
           <svg class="fill-bc-white shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
             <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{'rotate-180': expanded}" />
             <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{'rotate-180': expanded}" />
@@ -27,9 +26,7 @@
       >
         <div class="overflow-hidden">
           <!-- Slot content goes here -->
-          <p class="pb-3">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis facere minima voluptates.
-          </p>
+          <slot name="content"></slot>
         </div>
       </div>
     </div>
