@@ -9,6 +9,7 @@
   import Annonce from "@/components/Annonce.vue";
   import Banner from "@/components/Banner.vue";
   import GuideCard from "@/components/GuideCard.vue";
+  import Localisation from "@/components/Localisation.vue";
 </script>
 
 <template>
@@ -21,7 +22,8 @@
     <!-- <Review /> -->
     <!-- <Annonce /> -->
     <!-- <Banner /> -->
-    <GuideCard />
+    <!-- <GuideCard /> -->
+    <Localisation />
 
     <!-- <InputCustom type="email" placeholder="Votre adresse email" />
       <InputCustom

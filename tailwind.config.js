@@ -10,7 +10,7 @@ export default {
       'bc-black': '#19181D',
       'bc-yellow': '#FFD719',
       'bc-white': '#EFEFEE',
-      'bc-gray-dark': '29282D',
+      'bc-gray-dark': '#29282D',
       'bc-gray': '#37363B',
       'bc-gray-light': '#7F7F7F',
       'bc-gray-hover': 'rgb(59,51,51)',

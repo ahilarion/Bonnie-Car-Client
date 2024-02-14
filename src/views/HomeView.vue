@@ -1,7 +1,7 @@
 <script setup>
 
-import Banner from "@/components/Banner.vue";
-import LastPosts from "@/components/LastPosts.vue";
+  import Banner from "@/components/Banner.vue";
+  import LastPosts from "@/components/LastPosts.vue";
 </script>
 
 <template>
