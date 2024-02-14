@@ -3,7 +3,8 @@
 </script>
 
 <template>
-    <div class="flex flex-col lg:flex-row gap-16 text-center text-bc-white">
+  <div class="w-full bg-transparent flex flex-col items-center justify-center transition-all bg-bc-gray mt-32 p-10">
+    <div class="flex flex-col w-[73vw] min-w-[300px] lg:flex-row gap-[60px] text-center text-bc-white">
         <div class="flex flex-col items-center gap-5 lg:w-1/3">
             <svg width="91" height="100" viewBox="0 0 91 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <mask id="path-1-inside-1_1317_2168" fill="white">
@@ -69,7 +70,6 @@
                 négociations et assurant une satisfaction d'achat.
             </p>
         </div>
-
-
     </div>
+  </div>
 </template>

@@ -3,16 +3,16 @@
 </script>
 
 <template>
-    <div class="w-full flex flex-col  justify-between p-10">
+    <div class="w-full flex flex-col  justify-between p-10 bg-bc-gray mt-16">
 
         <div class="text-center">
-            <p class="text-bc-yellow mb-15px text-xl">Satisfaction Client</p>
-            <p>4,7 sur GoogleAvis</p>
+            <p class="text-bc-yellow mb-15px text-xl font-bold">Satisfaction Client</p>
+            <p class="text-bc-white">4,7 sur GoogleAvis</p>
         </div>
 
         <div class="w-full flex flex-col gap-10 lg:flex-row py-10">
             <div class="w-full lg:w-1/3">
-                <div class="flex items-center">
+                <div class="flex items-center text-bc-white">
                     <div>
                         Charlie Cox
                         <div class="flex">
@@ -33,7 +33,7 @@
                             </svg>
                         </div>
                     </div>
-                    <svg width="52" class="ml-42" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="52" class="ml-5" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_1453_2807)">
                         <rect width="52" height="52" rx="26" fill="#FFDBD1" fill-opacity="0.4"/>
                         <path d="M36.6075 47.401C30.5494 44.9633 28.553 41.9359 29.0702 37.5742H22.4155C22.9327 41.9359 20.9364 44.9633 14.8782 47.401C8.82008 49.8388 8.00635 52.5006 8.00635 52.5006H43.5035C43.5035 52.5006 42.6726 49.8388 36.6075 47.401Z" fill="#FF8482"/>
@@ -71,11 +71,11 @@
                         </defs>
                     </svg>
                 </div>
-                <div>Lorem ipsum dolor sit amet consectetur. Purus ac quis et cursus nunc amet.</div>
+                <div class="text-bc-white mt-2">Lorem ipsum dolor sit amet consectetur. Purus ac quis et cursus nunc amet.</div>
             </div>
 
             <div class="w-full lg:w-1/3">
-                <div class="flex items-center">
+                <div class="flex items-center text-bc-white">
                     <div>
                         Elizabeth Fisher
                         <div class="flex">
@@ -96,7 +96,7 @@
                             </svg>
                         </div>
                     </div>
-                    <svg width="52" class="ml-42" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="52" class="ml-5" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_1453_3179)">
                         <rect width="52" height="52" rx="26" fill="#FFDBD1" fill-opacity="0.4"/>
                         <path d="M8.23434 29.3152C8.55536 27.331 8.90029 25.2853 9.97947 23.588C10.946 22.0683 12.5306 20.7022 12.4384 18.9025C12.3906 18.0145 11.9227 17.1949 11.8578 16.3035C11.7553 14.8897 12.797 13.5236 14.1425 13.0762C14.6509 12.8975 15.1915 12.8288 15.7284 12.8748C16.2654 12.9207 16.7865 13.0802 17.2571 13.3426V13.2982C18.6744 9.01223 25.9042 7.40028 29.7394 8.19943C31.8177 8.65668 33.741 9.64727 35.3201 11.0737C36.8992 12.5001 38.0796 14.3131 38.7452 16.3343C38.9791 17.2601 39.2641 18.1722 39.5989 19.0664C41.2485 22.823 44.9129 22.4815 46.0877 28.5775C47.0747 33.7344 44.1957 39.3591 41.3065 41.2784C33.7556 46.2782 20.1156 44.9804 15.3173 43.3514C6.81706 40.4725 7.89282 31.4326 8.23434 29.3152Z" fill="#E83F53"/>
@@ -132,11 +132,11 @@
                     </svg>
                 </div>
                 
-                <div>Lorem ipsum dolor sit amet consectetur. Massa facilisi mi quis mollis sagittis est tellus consequat quis. Tincidunt nunc orci felis tincidunt semper pellentesque.</div>
+                <div class="text-bc-white mt-2">Lorem ipsum dolor sit amet consectetur. Massa facilisi mi quis mollis sagittis est tellus consequat quis. Tincidunt nunc orci felis tincidunt semper pellentesque.</div>
             </div>
 
             <div class="w-full lg:w-1/3">
-                <div class="flex items-center">
+                <div class="flex items-center text-bc-white">
                     <div>
                         Jose Mendez
                         <div class="flex">
@@ -157,7 +157,7 @@
                             </svg>
                         </div>
                     </div>
-                    <svg width="52" class="ml-42" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="52" class="ml-5" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="52" height="52" rx="26" fill="#FFDBD1" fill-opacity="0.4"/>
                         <path d="M43.864 27.2788C43.864 27.2788 42.0606 33.2655 32.8525 29.0469V21.9746C32.8525 21.9746 38.3406 24.8884 42.4001 24.1635C44.6243 23.7462 43.864 27.2788 43.864 27.2788Z" fill="#078C81"/>
                         <path d="M37.3081 46.6002C30.8901 44.0188 28.779 40.8115 29.3271 36.1934H22.2548C22.8029 40.8115 20.6919 44.0188 14.2738 46.6002C7.85575 49.1815 7 51.9998 7 51.9998H44.5819C44.5819 51.9998 43.7227 49.1674 37.3081 46.6002Z" fill="#E83F53"/>
@@ -189,14 +189,12 @@
                     </svg>
                 </div>
                 
-                <div>Lorem ipsum dolor sit amet consectetur. Massa facilisi mi quis mollis sagittis est tellus consequat quis. Tincidunt nunc orci felis tincidunt semper pellentesque.</div>
+                <div class="text-bc-white mt-2">Lorem ipsum dolor sit amet consectetur. Massa facilisi mi quis mollis sagittis est tellus consequat quis. Tincidunt nunc orci felis tincidunt semper pellentesque.</div>
             </div>
         </div>
 
         <div class="text-center">
-            <ButtonCustom>
-                Voir plus
-            </ButtonCustom>
+          <RouterLink to="/annonces" class="bg-bc-yellow text-gray-900 py-3 px-4 text-medium rounded-full">Donner son avis</RouterLink>
         </div>
         
     </div>
