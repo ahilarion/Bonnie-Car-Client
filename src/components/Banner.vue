@@ -1,6 +1,6 @@
 <script setup>
-import Search from "@/components/Search.vue";
-import TitleCustom from "@/components/TitleCustom.vue";
+  import Search from "@/components/Search.vue";
+  import TitleCustom from "@/components/TitleCustom.vue";
 </script>
 
 <template>

@@ -103,19 +103,6 @@ const prevImage = () => {
       <p class="mt-1 text-bc-white" v-if="posts[currentImage]">
         {{ posts[currentImage].content }}
       </p>
-      <!-- <InputCustom type="email" placeholder="Votre adresse email" />
-      <InputCustom
-        type="password"
-        placeholder="FéS PeTeR lE paSsword"
-        typeInput="iconRight"
-      />
-      <InputCustom
-        type="password"
-        placeholder="Drop ta loc"
-        typeInput="iconLeft"
-      />
-      <InputCustom placeholder="Balance ta bio honey" typeInput="textarea" />
-      <InputCustom placeholder="Choisi ton sexe bébé" typeInput="select" /> -->
     </div>
   </div>
 </template>
