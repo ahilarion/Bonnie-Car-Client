@@ -3,7 +3,8 @@
 </script>
 
 <template>
-    <div class="w-full flex flex-col  justify-between p-10 bg-bc-gray mt-16">
+  <div class="w-full bg-transparent flex flex-col items-center justify-center transition-all bg-bc-gray mt-16">
+    <div class="flex flex-col justify-between p-10 w-[73vw] min-w-[300px]">
 
         <div class="text-center">
             <p class="text-bc-yellow mb-15px text-xl font-bold">Satisfaction Client</p>
@@ -196,6 +197,6 @@
         <div class="text-center">
           <RouterLink to="/annonces" class="bg-bc-yellow text-gray-900 py-3 px-4 text-medium rounded-full">Donner son avis</RouterLink>
         </div>
-        
     </div>
+  </div>
 </template>
