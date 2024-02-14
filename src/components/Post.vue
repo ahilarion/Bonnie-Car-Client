@@ -1,37 +1,18 @@
 <script setup>
-const data = {
-  uuid: "4c137cca-f81a-4261-98e8-9fb5ba38d243",
-  title: "Voiture à vendre",
-  description: "Une belle voiture de sport en très bon état.",
-  price: 24500.0,
-  images: ["image1.jpg", "image2.jpg", "image3.jpg"],
-  vehicle: {
-    uuid: "e5aa972a-a5db-4442-a6b2-bdd590db6afe",
-    constructor: "Ford",
-    model: "Mustang",
-    is_two_wheeled: false,
-    original_price: 35000.0,
-    type: "Sport",
-    energy_source: "Gasoline",
-    transmission: "Automatic",
-    cylinder_capacity: 1596,
-    power: 310,
-    torque: 320,
-    year_of_manufacture: 2019,
-    production_year: 2019,
-    circulation_date: "2019-07-15",
-    technical_revision: "2022-07-15",
-    number_of_owners: 1,
-    kilometers: 20000,
-    color: "Red",
-    number_of_doors: 2,
-    seats: 4,
-    vehicle_length: 4784,
-    condition: "Excellent",
-    description: "Une belle voiture de sport en rouge en excellent état.",
+import { ref } from "vue";
+
+import { defineProps } from "vue";
+
+const props = defineProps({
+  data: {
+    type: Object,
+    required: true,
   },
-  published_at: "2023-04-20T14:30:00+00:00",
-};
+});
+
+const data = props.data;
+
+const currentImage = ref(0);
 
 const price = new Intl.NumberFormat("eu-FR", {
   style: "currency",
@@ -55,6 +36,15 @@ if (data.vehicle.transmission == "Automatic") {
 } else if (data.vehicle.transmission == "Manual") {
   transmission = "Boîte manuelle";
 }
+
+const nextImage = () => {
+  currentImage.value =
+    currentImage.value === data.images.length - 1 ? 0 : currentImage.value + 1;
+};
+const prevImage = () => {
+  currentImage.value =
+    currentImage.value === 0 ? data.images.length - 1 : currentImage.value - 1;
+};
 </script>
 
 <template>
@@ -62,12 +52,60 @@ if (data.vehicle.transmission == "Automatic") {
     <!-- Partie du haut de l'annonce -->
     <div class="relative">
       <img
-        class="rounded-t-3xl object-cover h-[280px] w-full le"
-        src="https://cdn.cleanrider.com/uploads/2023/08/lacama_Italian_Volt_Tazzari_Group_03.jpg"
+        v-for="(image, index) in data.images"
+        :key="index"
+        class="rounded-t-3xl object-cover h-[280px] w-full"
+        :src="image"
+        v-show="currentImage === index"
       />
       <div
         class="h-[60%] bg-gradient-to-b from-[transparent] to-bc-black absolute bottom-0 left-0 w-full"
       ></div>
+
+      <!-- Carousel Here -->
+      <div
+        class="absolute bottom-0 left-0 h-full w-full flex overflow-hidden"
+        v-if="data.images.length"
+      >
+        <button
+          @click="prevImage"
+          class="border-bc-yellow border-[1px] absolute z-10 top-1/2 left-0 ml-8 transform -translate-y-1/2 p-2 bg-bc-black-opacity rounded-full text-bc-white"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="h-6 w-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 19l-7-7 7-7"
+            ></path>
+          </svg>
+        </button>
+        <button
+          @click="nextImage"
+          class="border-bc-yellow border-[1px] absolute z-10 top-1/2 right-0 mr-8 transform -translate-y-1/2 p-2 bg-bc-black-opacity rounded-full text-bc-white"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="h-6 w-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            ></path>
+          </svg>
+        </button>
+      </div>
     </div>
 
     <!-- donnée de l'annonce -->
@@ -123,7 +161,7 @@ if (data.vehicle.transmission == "Automatic") {
           </div>
         </div>
 
-        <div class="flex gap-3">
+        <div v-if="data.vehicle.is_two_wheeled" class="flex gap-3">
           <svg
             width="23"
             height="21"
