@@ -43,17 +43,22 @@ if (data && data.vehicle && data.vehicle.transmission) {
   }
 }
 
+let images = [];
+if (data && data.images) {
+  images = JSON.parse(data.images);
+}
+
 const nextImage = () => {
   currentImage.value =
-    currentImage.value === (data && JSON.parse(data.images) ? JSON.parse(data.images).length - 1 : 0)
+    currentImage.value === (data && images ? images.length - 1 : 0)
       ? 0
       : currentImage.value + 1;
 };
 const prevImage = () => {
   currentImage.value =
     currentImage.value === 0
-      ? data && JSON.parse(data.images)
-        ? JSON.parse(data.images).length - 1
+      ? data && images
+        ? images.length - 1
         : 0
       : currentImage.value - 1;
 };
@@ -64,7 +69,7 @@ const prevImage = () => {
     <!-- Partie du haut de l'annonce -->
     <div class="relative">
       <img
-        v-for="(image, index) in JSON.parse(data.images)"
+        v-for="(image, index) in images"
         :key="index"
         class="rounded-t-3xl object-cover h-[280px] w-full"
         :src="image"
@@ -74,7 +79,7 @@ const prevImage = () => {
         class="h-[60%] bg-gradient-to-b from-[transparent] to-bc-black absolute bottom-0 left-0 w-full"
       ></div>
 
-      <!-- Carousel Here -->
+      <!-- Carousel Here -->2
       <div
         class="absolute bottom-0 left-0 h-full w-full flex overflow-hidden"
         v-if="data.images.length"
