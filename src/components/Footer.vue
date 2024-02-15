@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="w-full flex flex-col justify-around align-middle items-center gap-y-4">
+    <div class="w-full flex flex-col justify-around align-middle items-center gap-y-4 py-20">
 
         <svg width="146" height="129" viewBox="0 0 146 129" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M102.432 28.9635H101.113C97.7847 26.315 94.0968 24.1663 90.1291 22.5672C84.8921 20.4484 79.1055 19.329 73.3888 19.329H73.059C67.2523 19.389 61.3957 20.6083 56.1087 22.857C52.4708 24.3961 49.0228 26.4549 45.8746 28.9635H42.8464C46.5742 25.7453 50.8118 23.1668 55.4491 21.2879C60.9659 19.0392 67.0324 17.8599 73.059 17.9398C79.0455 17.9898 85.102 19.2391 90.5489 21.5678C94.8464 23.4067 98.8341 25.8753 102.432 28.9635Z" fill="white"/>

@@ -45,22 +45,22 @@ if (data && data.vehicle && data.vehicle.transmission) {
 
 const nextImage = () => {
   currentImage.value =
-    currentImage.value === (data && data.images ? data.images.length - 1 : 0)
+    currentImage.value === (data && JSON.parse(data.images) ? JSON.parse(data.images).length - 1 : 0)
       ? 0
       : currentImage.value + 1;
 };
 const prevImage = () => {
   currentImage.value =
     currentImage.value === 0
-      ? data && data.images
-        ? data.images.length - 1
+      ? data && JSON.parse(data.images)
+        ? JSON.parse(data.images).length - 1
         : 0
       : currentImage.value - 1;
 };
 </script>
 
 <template>
-  <div class="rounded-3xl h-full w-full bg-bc-gray-dark">
+  <div class="rounded-3xl h-full w-full bg-bc-gray-dark min-w-[380px] max-w-[420px]">
     <!-- Partie du haut de l'annonce -->
     <div class="relative">
       <img

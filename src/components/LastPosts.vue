@@ -47,7 +47,7 @@ onBeforeMount(async () => {
     class="w-full bg-transparent flex flex-col items-center justify-center transition-all"
   >
     <div
-      class="relative flex w-[73vw] min-w-[300px] flex-col md:flex-row gap-10 md:gap-20 items-center justify-start md:justify-center p-4 md:p-5 m-4"
+      class="relative flex w-[73vw] min-w-[300px] flex-col md:flex-row md:flex-wrap gap-10 md:gap-20 items-center justify-start md:justify-center p-4 md:p-5 m-4"
     >
       <Post :data="carOne" />
       <Post :data="carTwo" class="hidden md:block" />
@@ -59,7 +59,7 @@ onBeforeMount(async () => {
       >Voir toutes les annonces</RouterLink
     >
     <div
-      class="relative flex w-[73vw] min-w-[300px] flex-col md:flex-row gap-10 md:gap-20 items-center justify-start md:justify-center p-4 md:p-5 m-4"
+      class="relative flex w-[73vw] min-w-[300px] flex-col md:flex-row md:flex-wrap gap-10 md:gap-20 items-center justify-start md:justify-center p-4 md:p-5 m-4"
     >
       <Post :data="motorcycleOne" />
       <Post :data="motorcycleTwo" class="hidden md:block" />

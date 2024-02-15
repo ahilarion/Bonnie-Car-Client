@@ -7,6 +7,7 @@ import SubtitleCustom from "@/components/SubtitleCustom.vue";
 import GuideCard from "@/components/GuideCard.vue";
 import Review from "@/components/Review.vue";
 import Footer from "@/components/Footer.vue";
+import Sponsors from "@/components/Sponsors.vue";
 </script>
 
 <template>
@@ -31,5 +32,6 @@ import Footer from "@/components/Footer.vue";
     >
   </div>
   <Review />
+  <Sponsors />
   <Footer />
 </template>
