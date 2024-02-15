@@ -14,16 +14,16 @@ import Sidebar from "@/components/Sidebar.vue";
             <RouterLink to="/" class="text-bc-white text-medium">Nos annonces</RouterLink>
           </li>
           <li>
-            <RouterLink to="/about" class="text-bc-white text-medium">Nos guides</RouterLink>
+            <RouterLink to="/nos-guides" class="text-bc-white text-medium">Nos guides</RouterLink>
           </li>
           <li>
-            <RouterLink to="/contact" class="text-bc-white text-medium">À propos</RouterLink>
+            <RouterLink to="/a-propos" class="text-bc-white text-medium">À propos</RouterLink>
           </li>
           <li>
             <RouterLink to="/new-post" class="bg-bc-yellow text-gray-900 p-3 text-medium rounded-full">Déposer une annonce</RouterLink>
           </li>
           <li>
-            <RouterLink to="/login" class="bg-transparent border-bc-yellow border-2 text-bc-yellow p-3 text-medium rounded-full">Se connecter / S'inscrire</RouterLink>
+            <RouterLink to="/se-connecter" class="bg-transparent border-bc-yellow border-2 text-bc-yellow p-3 text-medium rounded-full">Se connecter / S'inscrire</RouterLink>
           </li>
         </ul>
       </div>
