@@ -1,6 +1,5 @@
 <script setup>
 import { ref } from "vue";
-
 import { defineProps } from "vue";
 
 const props = defineProps({
@@ -14,36 +13,49 @@ const data = props.data;
 
 const currentImage = ref(0);
 
-const price = new Intl.NumberFormat("eu-FR", {
-  style: "currency",
-  currency: "EUR",
-}).format(data.price);
+const price =
+  data && data.price
+    ? new Intl.NumberFormat("eu-FR", {
+        style: "currency",
+        currency: "EUR",
+      }).format(data.price)
+    : "";
 
 let energy_source = "";
-if (data.vehicle.energy_source == "Gasoline") {
-  energy_source = "Essence";
-} else if (data.vehicle.energy_source == "Diesel") {
-  energy_source = "Diesel";
-} else if (data.vehicle.energy_source == "Electricity") {
-  energy_source = "Électricité";
-} else if (data.vehicle.energy_source == "Hybrid") {
-  energy_source = "Hybride";
+if (data && data.vehicle && data.vehicle.energy_source) {
+  if (data.vehicle.energy_source === "Gasoline") {
+    energy_source = "Essence";
+  } else if (data.vehicle.energy_source === "Diesel") {
+    energy_source = "Diesel";
+  } else if (data.vehicle.energy_source === "Electricity") {
+    energy_source = "Électricité";
+  } else if (data.vehicle.energy_source === "Hybrid") {
+    energy_source = "Hybride";
+  }
 }
 
 let transmission = "";
-if (data.vehicle.transmission == "Automatic") {
-  transmission = "Boîte automatique";
-} else if (data.vehicle.transmission == "Manual") {
-  transmission = "Boîte manuelle";
+if (data && data.vehicle && data.vehicle.transmission) {
+  if (data.vehicle.transmission === "Automatic") {
+    transmission = "Boîte automatique";
+  } else if (data.vehicle.transmission === "Manual") {
+    transmission = "Boîte manuelle";
+  }
 }
 
 const nextImage = () => {
   currentImage.value =
-    currentImage.value === data.images.length - 1 ? 0 : currentImage.value + 1;
+    currentImage.value === (data && data.images ? data.images.length - 1 : 0)
+      ? 0
+      : currentImage.value + 1;
 };
 const prevImage = () => {
   currentImage.value =
-    currentImage.value === 0 ? data.images.length - 1 : currentImage.value - 1;
+    currentImage.value === 0
+      ? data && data.images
+        ? data.images.length - 1
+        : 0
+      : currentImage.value - 1;
 };
 </script>
 
@@ -52,7 +64,7 @@ const prevImage = () => {
     <!-- Partie du haut de l'annonce -->
     <div class="relative">
       <img
-        v-for="(image, index) in data.images"
+        v-for="(image, index) in JSON.parse(data.images)"
         :key="index"
         class="rounded-t-3xl object-cover h-[280px] w-full"
         :src="image"
