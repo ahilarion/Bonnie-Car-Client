@@ -14,6 +14,11 @@ const router = createRouter({
             component: () => import('../views/PostsView.vue')
         },
         {
+            path: '/ajouter-annonce',
+            name: 'AddPost',
+            component: () => import('../views/AddPostView.vue')
+        },
+        {
             path: '/nos-guides',
             name: 'Articles',
             component: () => import('../views/ArticlesView.vue')
@@ -32,6 +37,21 @@ const router = createRouter({
             path: '/inscription',
             name: 'Register',
             component: () => import('../views/RegisterView.vue')
+        },
+        {
+            path: '/password-reset',
+            name: 'Password-reset',
+            component: () => import('../views/PasswordResetView.vue')
+        },
+        {
+            path: '/nous-contacter',
+            name: 'Nous-contacter',
+            component: () => import('../views/ContactView.vue')
+        },
+        {
+            path: '/je-suis-interesse',
+            name: 'je-suis-interesse',
+            component: () => import('../views/InteresseView.vue')
         },
         {
             path: '/test',

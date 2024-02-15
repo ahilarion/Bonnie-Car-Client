@@ -4,14 +4,28 @@ import Sidebar from "@/components/Sidebar.vue";
 
 <template>
   <header class="fixed top-0 flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full text-sm py-4 transition-all">
-    <nav class="max-w-[85rem] w-full mx-auto px-4 flex items-center justify-between" aria-label="Global">
+    <nav class="max-w-[85rem] w-full mx-auto px-4 flex flex-wrap items-center justify-between" aria-label="Global">
       <a class="flex-none text-xl font-semibold" href="#">
         <img class="h-8" src="../assets/img/logo.svg" alt="Logo" />
       </a>
       <div class="hidden sm:flex flex-row items-center gap-5 mt-5 sm:justify-end sm:mt-0 sm:ps-5">
-        <a class="font-medium capitalize text-bc-white " href="#" aria-current="page">nos véhicules</a>
-        <a class="font-medium capitalize text-bc-white hover:text-gray-400" href="#">à propos</a>
-        <a class="font-medium capitalize text-bc-white hover:text-gray-400" href="#">nos guides</a>
+        <ul class="flex space-x-4">
+          <li>
+            <RouterLink to="/" class="text-bc-white text-medium">Nos annonces</RouterLink>
+          </li>
+          <li>
+            <RouterLink to="/about" class="text-bc-white text-medium">Nos guides</RouterLink>
+          </li>
+          <li>
+            <RouterLink to="/contact" class="text-bc-white text-medium">À propos</RouterLink>
+          </li>
+          <li>
+            <RouterLink to="/new-post" class="bg-bc-yellow text-gray-900 p-3 text-medium rounded-full">Déposer une annonce</RouterLink>
+          </li>
+          <li>
+            <RouterLink to="/login" class="bg-transparent border-bc-yellow border-2 text-bc-yellow p-3 text-medium rounded-full">Se connecter / S'inscrire</RouterLink>
+          </li>
+        </ul>
       </div>
       <div class="flex sm:hidden flex-row items-center gap-5 justify-end mt-0 ps-5">
         <button class="text-bc-white" data-hs-overlay="#docs-sidebar" aria-controls="docs-sidebar" aria-label="Toggle navigation" @click="toggleMenu">

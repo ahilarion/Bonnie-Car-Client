@@ -41,7 +41,7 @@ onMounted(() => {
 
 <template>
   <button
-    :class="`${colorText} ${colorBg} ${colorBorder} ${rounded} px-2.5 py-5 font-light text-[16px] border-solid border`"
+    :class="`${colorText} ${colorBg} ${colorBorder} ${rounded} px-2.5 py-5 text-[16px] border-solid border font-bold`"
   >
     <slot></slot>
   </button>
