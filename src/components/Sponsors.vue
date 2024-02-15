@@ -2,15 +2,10 @@
 
 </script>
 <template>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="bg-bc-yellow w-full h-[210px] rounded-[35px] overflow-hidden relative flex flex-col items-center">
+    <div class="bg-transparent w-full overflow-hidden relative flex flex-col items-center mt-16">
         <p class="text-xl text-bc-black font-bold text-center">Ils parlent de nous</p>
 
-        <div class="h-3/4 w-3/4">
+        <div class="w-[40rem] relative">
             <!-- Carousel Here -->
             <button @click="prevImage" class="border-bc-yellow border-[1px] absolute z-10 top-1/2 left-0 ml-4 transform -translate-y-1/2 p-2 bg-bc-black-opacity rounded-full text-bc-white">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
