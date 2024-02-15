@@ -23,7 +23,7 @@ const props = defineProps({
 
 <template>
   <!-- Input Normal -->
-  <div v-if="props.typeInput === 'normal'" class="bg-bc-black rounded-xl mb-5">
+  <div v-if="props.typeInput === 'normal'" class="bg-bc-black rounded-xl">
     <input
       class="h-12 rounded-xl bg-[transparent] w-full border-none text-bc-yellow placeholder:text-bc-white placeholder:text-opacity-50"
       :type="type"
@@ -34,7 +34,7 @@ const props = defineProps({
   <!-- Input avec icon à droite -->
   <div
     v-else-if="props.typeInput === 'iconRight'"
-    class="bg-bc-black rounded-xl relative mb-5"
+    class="bg-bc-black rounded-xl relative"
   >
     <svg
       class="absolute top-2/4 translate-y-[-50%] right-4"
@@ -68,7 +68,7 @@ const props = defineProps({
   <!-- Input avec icon à gauche -->
   <div
     v-else-if="props.typeInput === 'iconLeft'"
-    class="bg-bc-black rounded-[50px] relative mb-5"
+    class="bg-bc-black rounded-[50px] relative"
   >
     <svg
       class="absolute top-2/4 translate-y-[-50%] left-[15%]"
@@ -94,7 +94,7 @@ const props = defineProps({
   <!-- Le textarea -->
   <div
     v-else-if="props.typeInput === 'textarea'"
-    class="bg-bc-black rounded-xl relative mb-5"
+    class="bg-bc-black rounded-xl relative"
   >
     <textarea
       class="rounded-xl bg-[transparent] w-full border-none text-bc-yellow placeholder:text-bc-white placeholder:text-opacity-50"
