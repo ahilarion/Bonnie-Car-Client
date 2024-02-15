@@ -6,6 +6,7 @@ import Caracteristic from "@/components/Caracteristic.vue";
 import Footer from "@/components/Footer.vue";
 import GlobalInfos from "@/components/GlobalInfos.vue";
 import Review from "@/components/Review.vue";
+import Filters from "@/components/Filters.vue";
 
 // donnée pour le post
 const dataPost = {
@@ -49,10 +50,11 @@ const dataPost = {
 
 <template>
   <!-- <Sponsors /> -->
-  <Post :data="dataPost" class="mt-20" />
+  <!-- <Post :data="dataPost" class="mt-20" /> -->
   <!-- <LoginForm /> -->
   <!-- <Caracteristic /> -->
   <!-- <Footer /> -->
   <!-- <GlobalInfos /> -->
   <!-- <Review /> -->
+  <Filters/>
 </template>

@@ -5,7 +5,7 @@
 </script>
 
 <template>
-    <div class="absolute bg-bc-gray w-full z-[55] h-full justify-center flex">
+    <div class="absolute bg-bc-gray w-full h-full justify-center flex">
         <div class="flex flex-col px-8 justify-center h-full w-full lg:w-[33%] align-middle">
             <TitleCustom class="text-center text-bc-yellow">
                 Mot de passe oublié
