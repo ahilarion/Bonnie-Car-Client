@@ -26,6 +26,6 @@
             </div>
         </div>
 
-        <p class="absolute bottom-5 left-2/4 translate-x-[-50%] text-[#7f7f7f]">Vous avez déja un compte ? <a href="#" class="underline text-bc-yellow">Connexion</a></p>
+        <p class="absolute bottom-5 left-2/4 translate-x-[-50%] text-[#7f7f7f]">Vous avez déja un compte ? <a href="./se-connecter" class="underline text-bc-yellow">Connexion</a></p>
     </div>
 </template>

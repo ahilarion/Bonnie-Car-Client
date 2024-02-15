@@ -8,10 +8,11 @@
     <div class="absolute bg-bc-gray w-full h-full justify-center flex">
         <div class="flex flex-col px-8 justify-center h-full w-full lg:w-[33%] align-middle">
             <TitleCustom class="text-center text-bc-yellow">
-                Mot de passe oublié
+                Inscription
             </TitleCustom>
 
             <InputCustom
+                class="mt-5"
                 type="email"
                 placeholder="Adresse mail"
             />
@@ -20,7 +21,7 @@
                 type="password"
                 placeholder="Mot de passe"
                 typeInput="iconRight"
-                class="mb-0"
+                class="mb-0 mt-5"
             />
             
             <p class="text-bc-white mb-2.5">8 caractères minimum</p>

@@ -12,11 +12,13 @@
             </TitleCustom>
             
             <InputCustom
+                class="mt-5"
                 type="email"
                 placeholder="Adresse mail"
             />
 
             <InputCustom
+                class="mt-5"
                 type="password"
                 placeholder="Mot de passe"
                 typeInput="iconRight"
