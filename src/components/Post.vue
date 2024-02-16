@@ -65,7 +65,7 @@ const prevImage = () => {
 </script>
 
 <template>
-  <div class="rounded-3xl h-full w-full bg-bc-gray-dark min-w-[380px] max-w-[420px]">
+  <div class="rounded-3xl h-full w-full bg-bc-gray-dark min-w-[320px] max-w-[350px] min-h-[580px]">
     <!-- Partie du haut de l'annonce -->
     <div class="relative">
       <img
