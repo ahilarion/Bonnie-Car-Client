@@ -1,5 +1,6 @@
 <script setup>
-import { ref } from "vue";
+import { onBeforeMount, ref } from "vue";
+import http from "@/config/http.js";
 
 import TitleCustom from "@/components/TitleCustom.vue";
 import InputCustom from "@/components/InputCustom.vue";
@@ -8,6 +9,7 @@ import ButtonCustom from "@/components/ButtonCustom.vue";
 import GlobalInfos from "@/components/GlobalInfos.vue";
 import Accordion from "@/components/Accordion.vue";
 import Footer from "@/components/Footer.vue";
+import Post from "@/components/Post.vue";
 
 const typeVehicle = "car";
 
@@ -16,6 +18,11 @@ const subtitle = ref("");
 const listCategory = ["choix1", "choix2", "choix3", "choix4", "choix5"];
 const listYear = ["2001", "2022"];
 
+let lastVehicle = ref([]);
+const vehicleOne = ref(null);
+const vehicleTwo = ref(null);
+const vehicleThree = ref(null);
+
 if (typeVehicle === "car") {
   urlImageBg.value = "redcar.jpg";
   subtitle.value = "Votre 4 roues";
@@ -23,6 +30,24 @@ if (typeVehicle === "car") {
   urlImageBg.value = "about.jpg";
   subtitle.value = "Votre 2 roues";
 }
+
+const getVehicle = async () => {
+  if (typeVehicle === "car") {
+    const response = await http.get("/post/last-car");
+    lastVehicle.value = response.data;
+  } else if (typeVehicle === "motorcycle") {
+    const response = await http.get("/post/last-moto");
+    lastVehicle.value = response.data;
+  }
+};
+
+onBeforeMount(async () => {
+  await getVehicle();
+
+  vehicleOne.value = lastVehicle.value.data[0];
+  vehicleTwo.value = lastVehicle.value.data[1];
+  vehicleThree.value = lastVehicle.value.data[2];
+});
 </script>
 
 <template>
@@ -336,6 +361,23 @@ if (typeVehicle === "car") {
           eveniet pariatur.
         </template>
       </Accordion>
+    </div>
+    <div class="text-bc-gray-light uppercase py-4">Dernière annonce postée</div>
+
+    <div
+      class="w-full bg-transparent flex flex-col items-center justify-center transition-all"
+    >
+      <div
+        class="relative flex w-[73vw] min-w-[300px] flex-col md:flex-row md:flex-wrap gap-10 md:gap-20 items-center justify-start md:justify-center p-4 md:p-5 m-4"
+      >
+        <Post v-if="vehicleOne" :data="vehicleOne" />
+        <Post v-if="vehicleTwo" :data="vehicleTwo" class="hidden md:block" />
+        <Post
+          v-if="vehicleThree"
+          :data="vehicleThree"
+          class="hidden md:block"
+        />
+      </div>
     </div>
   </div>
 

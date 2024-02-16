@@ -1,5 +1,5 @@
 <template>
-  <div class="divide-y text-bc-white">
+  <div class="divide-y text-bc-white w-full">
     <div>
       <h2>
         <button
