@@ -61,7 +61,7 @@ onBeforeMount(async () => {
       <TitleCustom class="text-bc-yellow">Déposer une annonce</TitleCustom>
     </div>
     <div class="absolute top-32 pt-14 px-2 z-20 w-full">
-      <div class="bg-bc-gray-dark py-4 px-10 rounded-3xl">
+      <div class="bg-bc-gray-dark py-4 px-10 rounded-3xl md:mx-[20%]">
         <SubtitleCustom class="text-bc-yellow mb-6 text-center">{{
           subtitle
         }}</SubtitleCustom>
@@ -118,7 +118,7 @@ onBeforeMount(async () => {
     </div>
     <div class="absolute top-0 z-10 bg-bc-black w-full h-full opacity-85"></div>
   </div>
-  <div class="bg-bc-gray-dark px-10 py-4">
+  <div class="bg-bc-gray-dark px-10 py-4 md:flex">
     <GlobalInfos class="mb-14">
       <template #svg>
         <svg
@@ -148,22 +148,24 @@ onBeforeMount(async () => {
       </template>
     </GlobalInfos>
 
-    <iframe
-      class="w-full h-52 md:h-96"
-      src="https://www.youtube.com/embed/zkNW5iN3fOg?si=7EJaKyF9D8zAHpvI"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen
-    ></iframe>
+    <div>
+      <iframe
+        class="w-full h-52"
+        src="https://www.youtube.com/embed/zkNW5iN3fOg?si=7EJaKyF9D8zAHpvI"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
 
-    <SubtitleCustom class="text-bc-yellow text-center py-4">
-      Vendez simplement et rapidement
-    </SubtitleCustom>
+      <SubtitleCustom class="text-bc-yellow text-center py-4">
+        Vendez simplement et rapidement
+      </SubtitleCustom>
 
-    <p class="text-center text-bc-white">
-      La vente de votre moto, prise en charge de A à Z en France.
-    </p>
+      <p class="text-center text-bc-white">
+        La vente de votre moto, prise en charge de A à Z en France.
+      </p>
+    </div>
 
     <GlobalInfos class="mt-20">
       <template #svg>
@@ -249,7 +251,7 @@ onBeforeMount(async () => {
     </GlobalInfos>
   </div>
 
-  <div class="px-10 py-2">
+  <div class="px-10 py-2 mx-40">
     <TitleCustom class="text-yellow text-center">Mise en vente</TitleCustom>
     <div class="flex flex-wrap">
       <Accordion>
@@ -362,6 +364,7 @@ onBeforeMount(async () => {
         </template>
       </Accordion>
     </div>
+
     <div class="text-bc-gray-light uppercase py-4">Dernière annonce postée</div>
 
     <div
