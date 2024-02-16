@@ -46,9 +46,13 @@ onBeforeMount(async () => {
   <div
     class="w-full bg-transparent flex flex-col items-center justify-center transition-all"
   >
+
     <div
-      class="relative flex w-[73vw] min-w-[300px] flex-col md:flex-row md:flex-wrap gap-10 md:gap-20 items-center justify-start md:justify-center p-4 md:p-5 m-4"
+      class="relative flex w-[73vw] min-w-[300px] flex-col md:flex-row md:flex-wrap gap-10 items-center justify-start md:justify-center p-4 md:p-5 m-4"
     >
+      <SubtitleCustom class="text-bc-yellow text-left w-full">
+        Les dernières annonces 4 roues
+      </SubtitleCustom>
       <Post v-if="carOne" :data="carOne" />
       <Post v-if="carTwo" :data="carTwo" class="hidden md:block" />
       <Post v-if="carThree" :data="carThree" class="hidden md:block" />
@@ -59,8 +63,11 @@ onBeforeMount(async () => {
       >Voir toutes les annonces</RouterLink
     >
     <div
-      class="relative flex w-[73vw] min-w-[300px] flex-col md:flex-row md:flex-wrap gap-10 md:gap-20 items-center justify-start md:justify-center p-4 md:p-5 m-4"
+      class="relative flex w-[73vw] min-w-[300px] flex-col md:flex-row md:flex-wrap gap-10 items-center justify-start md:justify-center p-4 md:p-5 m-4"
     >
+      <SubtitleCustom class="text-bc-yellow text-left w-full">
+        Les dernières annonces 2 roues
+      </SubtitleCustom>
       <Post v-if="motorcycleOne" :data="motorcycleOne" />
       <Post v-if="motorcycleTwo" :data="motorcycleTwo" class="hidden md:block" />
       <Post v-if="motorcycleThree" :data="motorcycleThree" class="hidden md:block" />
