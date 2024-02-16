@@ -8,6 +8,7 @@ import GuideCard from "@/components/GuideCard.vue";
 import Review from "@/components/Review.vue";
 import Footer from "@/components/Footer.vue";
 import Sponsors from "@/components/Sponsors.vue";
+import Partners from "@/components/Partners.vue";
 </script>
 
 <template>
@@ -33,5 +34,6 @@ import Sponsors from "@/components/Sponsors.vue";
   </div>
   <Review />
   <Sponsors />
+  <Partners />
   <Footer />
 </template>

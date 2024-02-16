@@ -6,7 +6,7 @@
     <div
         class="relative flex w-[73vw] min-w-[300px] flex-col md:flex-row md:flex-wrap gap-10 items-center justify-start md:justify-center p-4 md:p-5 m-4"
     >
-    <p class="text-xl text-bc-yellow font-bold w-full text-left">Ils parlent de nous</p>
+    <p class="text-xl text-bc-yellow font-bold w-full text-left">Nos partenaires</p>
     <div class="w-[25rem] md:w-[40rem] relative">
       <!-- Carousel Here -->
       <button @click="prevImage" class="border-bc-yellow border-[1px] absolute z-10 top-1/2 left-0 ml-4 transform -translate-y-1/2 p-2 bg-bc-black-opacity rounded-full text-bc-white">
