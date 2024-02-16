@@ -38,13 +38,14 @@ export default {
     return {
       currentImage: 0,
       posts: [
-        { mainImage: "@/assets/img/logo_bfm.png" },
-        { mainImage: "@/assets/img/lerepaire.png" },
-        { mainImage: "@/assets/img/logo_decision_ATELIER.png" },
-        { mainImage: "@/assets/img/logo_fct.png" },
-        { mainImage: "@/assets/img/logo_JA_1.jpg" },
-        { mainImage: "@/assets/img/logo_leparisien.png" },
-        { mainImage: "@/assets/img/pro.largus.fr.png" }
+          // image in public/img
+        { mainImage: "/img/logo_bfm.png" },
+        { mainImage: "/img/lerepaire.png" },
+        { mainImage: "/img/logo_decision_ATELIER.png" },
+        { mainImage: "/img/logo_fct.png" },
+        { mainImage: "/img/logo_JA_1.jpg" },
+        { mainImage: "/img/logo_leparisien.png" },
+        { mainImage: "/img/pro.largus.fr.png" }
       ],
     };
   },
