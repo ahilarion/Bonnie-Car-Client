@@ -6,7 +6,7 @@ import Sidebar from "@/components/Sidebar.vue";
   <header class="fixed top-0 flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full text-sm py-4 transition-all">
     <nav class="max-w-[85rem] w-full mx-auto px-4 flex flex-wrap items-center justify-between" aria-label="Global">
       <a class="flex-none text-xl font-semibold" href="#">
-        <img class="h-8" src="../assets/img/logo.svg" alt="Logo" />
+        <img class="h-12" src="../assets/img/logo.svg" alt="Logo" />
       </a>
       <div class="hidden sm:flex flex-row items-center gap-5 mt-5 sm:justify-end sm:mt-0 sm:ps-5">
         <ul class="flex space-x-4">
