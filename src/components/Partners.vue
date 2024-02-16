@@ -38,13 +38,13 @@ export default {
     return {
       currentImage: 0,
       posts: [
-        { mainImage: "@/assets/img/histovec-header-mobile.png" },
-        { mainImage: "@/assets/img/labecanerie.png" },
-        { mainImage: "@/assets/img/logo-verifianceFooter.png"},
-        { mainImage: "@/assets/img/logo_eplaque.png"},
-        { mainImage: "@/assets/img/logo_france_pare_brise_1.jpg"},
-        { mainImage: "@/assets/img/small-logo-parking.png"},
-        { mainImage: "@/assets/img/vivocaz.png"}
+        { mainImage: "/img/histovec-header-mobile.png" },
+        { mainImage: "/img/labecanerie.png" },
+        { mainImage: "/img/logo-verifianceFooter.png"},
+        { mainImage: "/img/logo_eplaque.png"},
+        { mainImage: "/img/logo_france_pare_brise_1.jpg"},
+        { mainImage: "/img/small-logo-parking.png"},
+        { mainImage: "/img/vivocaz.png"}
       ],
     };
   },
