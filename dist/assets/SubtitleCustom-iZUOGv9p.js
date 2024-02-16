@@ -1,0 +1,1 @@
+import{_ as e,o,c as s,l as c}from"./index-C11G_Nq1.js";const n={},r={class:"text-[20px] font-black text-left text-bc-white"};function a(t,l){return o(),s("h2",r,[c(t.$slots,"default")])}const f=e(n,[["render",a]]);export{f as S};
