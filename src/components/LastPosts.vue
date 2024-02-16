@@ -49,9 +49,9 @@ onBeforeMount(async () => {
     <div
       class="relative flex w-[73vw] min-w-[300px] flex-col md:flex-row md:flex-wrap gap-10 md:gap-20 items-center justify-start md:justify-center p-4 md:p-5 m-4"
     >
-      <Post :data="carOne" />
-      <Post :data="carTwo" class="hidden md:block" />
-      <Post :data="carThree" class="hidden md:block" />
+      <Post v-if="carOne" :data="carOne" />
+      <Post v-if="carTwo" :data="carTwo" class="hidden md:block" />
+      <Post v-if="carThree" :data="carThree" class="hidden md:block" />
     </div>
     <RouterLink
       to="/annonces"
@@ -61,9 +61,9 @@ onBeforeMount(async () => {
     <div
       class="relative flex w-[73vw] min-w-[300px] flex-col md:flex-row md:flex-wrap gap-10 md:gap-20 items-center justify-start md:justify-center p-4 md:p-5 m-4"
     >
-      <Post :data="motorcycleOne" />
-      <Post :data="motorcycleTwo" class="hidden md:block" />
-      <Post :data="motorcycleThree" class="hidden md:block" />
+      <Post v-if="motorcycleOne" :data="motorcycleOne" />
+      <Post v-if="motorcycleTwo" :data="motorcycleTwo" class="hidden md:block" />
+      <Post v-if="motorcycleThree" :data="motorcycleThree" class="hidden md:block" />
     </div>
     <RouterLink
       to="/annonces"

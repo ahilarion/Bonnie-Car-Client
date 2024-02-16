@@ -5,7 +5,7 @@ import { defineProps } from "vue";
 const props = defineProps({
   data: {
     type: Object,
-    required: true,
+    required: true
   },
 });
 
@@ -79,10 +79,10 @@ const prevImage = () => {
         class="h-[60%] bg-gradient-to-b from-[transparent] to-bc-black absolute bottom-0 left-0 w-full"
       ></div>
 
-      <!-- Carousel Here -->2
+      <!-- Carousel Here -->
       <div
         class="absolute bottom-0 left-0 h-full w-full flex overflow-hidden"
-        v-if="data.images.length"
+        v-if="images.length"
       >
         <button
           @click="prevImage"
