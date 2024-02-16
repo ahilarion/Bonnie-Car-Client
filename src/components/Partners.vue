@@ -38,13 +38,13 @@ export default {
     return {
       currentImage: 0,
       posts: [
-        { mainImage: "src/assets/img/logo_bfm.png" },
-        { mainImage: "src/assets/img/lerepaire.png" },
-        { mainImage: "src/assets/img/logo_decision_ATELIER.png" },
-        { mainImage: "src/assets/img/logo_fct.png" },
-        { mainImage: "src/assets/img/logo_JA_1.jpg" },
-        { mainImage: "src/assets/img/logo_leparisien.png" },
-        { mainImage: "src/assets/img/pro.largus.fr.png" }
+        { mainImage: "src/assets/img/histovec-header-mobile.png" },
+        { mainImage: "src/assets/img/labecanerie.png" },
+        { mainImage: "src/assets/img/logo-verifianceFooter.png"},
+        { mainImage: "src/assets/img/logo_eplaque.png"},
+        { mainImage: "src/assets/img/logo_france_pare_brise_1.jpg"},
+        { mainImage: "src/assets/img/small-logo-parking.png"},
+        { mainImage: "src/assets/img/vivocaz.png"}
       ],
     };
   },
