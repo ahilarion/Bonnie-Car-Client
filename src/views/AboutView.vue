@@ -7,7 +7,7 @@ import GlobalInfos from "@/components/GlobalInfos.vue";
 </script>
 
 <template>
-  <div class="relative h-[44rem]">
+  <div class="relative h-[44rem] md:h-[25rem]">
     <img
       class="w-full h-full object-cover"
       src="@/assets/img/about.jpg"
